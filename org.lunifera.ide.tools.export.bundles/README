@@ -1,0 +1,7 @@
+Call 
+mvn clean verify -Dclassifier=sources
+to download all source bundles
+
+Call 
+mvn clean verify
+to download all jar files
