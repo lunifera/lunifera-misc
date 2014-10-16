@@ -29,6 +29,22 @@
 			<id>lunifera-3rd-party</id>
 			<url>http://maven.lunifera.org:8086/nexus/content/repositories/thirdparty/</url>
 		</repository>
+		<repository>
+			<id>snapshots</id>
+			<url>http://oss.sonatype.org/content/repositories/snapshots/</url>
+		</repository>
+		<repository>
+			<id>vaadin-snapshots</id>
+			<url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+		</repository>
+		<repository>
+			<id>ops4j-snapshots</id>
+			<url>http://oss.sonatype.org/content/repositories/ops4j-snapshots/</url>
+		</repository>
+		<repository>
+			<id>vaadin-addons</id>
+			<url>http://maven.vaadin.com/vaadin-addons/</url>
+		</repository>
 	</repositories>
 
 	<build>
@@ -37,6 +53,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>2.8</version>
+				<configuration>
+					<actTransitively>false</actTransitively>
+					<transitive>false</transitive>
+					<includeClassifiers></includeClassifiers>
+					<excludeTransitive>true</excludeTransitive>
+				</configuration>
 				<executions>
 					<execution>
 						<id>copy-dependencies</id>
@@ -44,10 +66,6 @@
 						<goals>
 							<goal>copy-dependencies</goal>
 						</goals>
-						<configuration>
-							<actTransitively>true</actTransitively>
-							<transitive>true</transitive>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -318,6 +336,17 @@
 					<version>${lunifera.runtimeweb.version}</version>
 				</dependency>
 
+				<!-- ECView addons -->
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.xtext.builder.participant.i18n</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.xtext.builder.participant</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
 
 				<!-- Metadata service -->
 				<dependency>
@@ -326,7 +355,7 @@
 					<version>${lunifera.metadata-service.version}</version>
 				</dependency>
 				<dependency>
-					<groupId>org.lunifera.xtext.builder.participant.jvmtypes</groupId>
+					<groupId>org.lunifera.xtext.builder</groupId>
 					<artifactId>org.lunifera.xtext.builder.metadata.services</artifactId>
 					<version>${lunifera.metadata-service.version}</version>
 				</dependency>
@@ -342,12 +371,7 @@
 				</dependency>
 				<dependency>
 					<groupId>org.lunifera.xtext.builder</groupId>
-					<artifactId>org.lunifera.xtext.builder.participant</artifactId>
-					<version>${lunifera.metadata-service.version}</version>
-				</dependency>
-				<dependency>
-					<groupId>org.lunifera.xtext.builder</groupId>
-					<artifactId>org.lunifera.xtext.builder.participant.i18n</artifactId>
+					<artifactId>org.lunifera.xtext.builder.participant.jvmtypes</artifactId>
 					<version>${lunifera.metadata-service.version}</version>
 				</dependency>
 			</dependencies>
@@ -358,7 +382,6 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<dependencies>
-
 				<!-- DSL -->
 				<dependency>
 					<groupId>org.lunifera.dsl</groupId>
