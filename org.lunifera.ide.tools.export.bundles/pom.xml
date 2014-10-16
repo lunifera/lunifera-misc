@@ -6,10 +6,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<lunifera.dsl.version>0.0.1-SNAPSHOT</lunifera.dsl.version>
-		<ecview.version>0.0.1-SNAPSHOT</ecview.version>
-		<lunifera.runtime.version>0.0.1-SNAPSHOT</lunifera.runtime.version>
-		<lunifera.runtimeweb.version>0.0.1-SNAPSHOT</lunifera.runtimeweb.version>
+		<lunifera.dsl.version>0.7.5-SNAPSHOT</lunifera.dsl.version>
+		<lunifera.ecview.version>0.7.5-SNAPSHOT</lunifera.ecview.version>
+		<lunifera.ecview-addons.version>0.7.5-SNAPSHOT</lunifera.ecview-addons.version>
+		<lunifera.runtime.version>0.7.5-SNAPSHOT</lunifera.runtime.version>
+		<lunifera.runtimeweb.version>0.7.5-SNAPSHOT</lunifera.runtimeweb.version>
+		<lunifera.vaadin-mobile.version>0.7.5-SNAPSHOT</lunifera.vaadin-mobile.version>
+		<lunifera.ide.version>0.7.5-SNAPSHOT</lunifera.ide.version>
+		<lunifera.metadata-service.version>0.8.5-SNAPSHOT</lunifera.metadata-service.version>
 	</properties>
 
 	<repositories>
@@ -26,173 +30,6 @@
 			<url>http://maven.lunifera.org:8086/nexus/content/repositories/thirdparty/</url>
 		</repository>
 	</repositories>
-
-	<dependencies>
-		<!-- ECView bundles -->
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.common</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.common.editparts.emf</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.common.model</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.databinding.beans</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.databinding.emf</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.extension.editparts</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.extension.editparts.emf</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.extension.model</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.ui.presentation.common</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf.ecp.ecview</groupId>
-			<artifactId>org.eclipse.emf.ecp.ecview.util.emf</artifactId>
-			<version>${ecview.version}</version>
-		</dependency>
-
-		<!-- Runtime bundles -->
-		<dependency>
-			<groupId>org.lunifera.runtime</groupId>
-			<artifactId>org.lunifera.runtime.common</artifactId>
-			<version>${lunifera.runtime.version}</version>
-		</dependency>
-
-
-		<!-- Runtime web bundles -->
-		<dependency>
-			<groupId>org.lunifera.runtime.web</groupId>
-			<artifactId>org.lunifera.runtime.web.ecview.presentation.vaadin</artifactId>
-			<version>${lunifera.runtimeweb.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.runtime.web</groupId>
-			<artifactId>org.lunifera.runtime.web.ecview.services.vaadin</artifactId>
-			<version>${lunifera.runtimeweb.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.runtime.web</groupId>
-			<artifactId>org.lunifera.runtime.web.vaadin.common</artifactId>
-			<version>${lunifera.runtimeweb.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.runtime.web</groupId>
-			<artifactId>org.lunifera.runtime.web.vaadin.components</artifactId>
-			<version>${lunifera.runtimeweb.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.runtime.web</groupId>
-			<artifactId>org.lunifera.runtime.web.vaadin.databinding</artifactId>
-			<version>${lunifera.runtimeweb.version}</version>
-		</dependency>
-
-
-		<!-- DSL bundles -->
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.common.xtext</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.common.xtext.ui</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.datatype.lib</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.datatype.xtext</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.datatype.xtext.ui</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.dto.lib</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.dto.xtext</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.dto.xtext.ui</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.entity.xtext</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.entity.xtext.ui</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.metadata.services</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.mwe</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.semantic.common</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.semantic.dto</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lunifera.dsl</groupId>
-			<artifactId>org.lunifera.dsl.semantic.entity</artifactId>
-			<version>${lunifera.dsl.version}</version>
-		</dependency>
-	</dependencies>
 
 	<build>
 		<plugins>
@@ -226,6 +63,377 @@
 			<build>
 				<defaultGoal>clean dependency:copy-dependencies</defaultGoal>
 			</build>
+		</profile>
+		<profile>
+			<id>lunifera-common</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<dependencies>
+				<!-- ECView bundles -->
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.common</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.common.editparts.emf</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.common.model</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.databinding.beans</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.databinding.emf</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.extension.editparts</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.extension.editparts.emf</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.extension.model</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.ui.presentation.common</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview.core</groupId>
+					<artifactId>org.lunifera.ecview.core.util.emf</artifactId>
+					<version>${lunifera.ecview.version}</version>
+				</dependency>
+
+				<!-- Runtime bundles -->
+				<dependency>
+					<groupId>org.lunifera.runtime</groupId>
+					<artifactId>org.lunifera.runtime.common</artifactId>
+					<version>${lunifera.runtime.version}</version>
+				</dependency>
+
+
+				<!-- Runtime web bundles -->
+				<dependency>
+					<groupId>org.lunifera.runtime.web</groupId>
+					<artifactId>org.lunifera.runtime.web.ecview.presentation.vaadin</artifactId>
+					<version>${lunifera.runtimeweb.version}</version>
+				</dependency>
+
+
+				<dependency>
+					<groupId>org.lunifera.runtime.web</groupId>
+					<artifactId>org.lunifera.runtime.web.vaadin.common</artifactId>
+					<version>${lunifera.runtimeweb.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.runtime.web</groupId>
+					<artifactId>org.lunifera.runtime.web.vaadin.components</artifactId>
+					<version>${lunifera.runtimeweb.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.runtime.web</groupId>
+					<artifactId>org.lunifera.runtime.web.vaadin.databinding</artifactId>
+					<version>${lunifera.runtimeweb.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.runtime.web</groupId>
+					<artifactId>org.lunifera.runtime.web.vaadin.widgetset</artifactId>
+					<version>${lunifera.runtimeweb.version}</version>
+				</dependency>
+
+				<!-- DSL bundles -->
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.common.xtext</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.datatype.lib</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.datatype.xtext</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.dto.lib</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.dto.xtext</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.entity.xtext</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.mwe</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.semantic.common</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.semantic.common.edit</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.semantic.dto</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.semantic.entity</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.semantic.entity.edit</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+
+				<!-- ECView addons bundles -->
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.dsl</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.dsl.lib</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.semantic.uimodel</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.semantic.uisemantics</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.uisemantics</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+
+				<!-- Vaadin mobile -->
+				<dependency>
+					<groupId>org.lunifera.mobile.vaadin</groupId>
+					<artifactId>org.lunifera.mobile.vaadin.ecview.editparts</artifactId>
+					<version>${lunifera.vaadin-mobile.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.mobile.vaadin</groupId>
+					<artifactId>org.lunifera.mobile.vaadin.ecview.editparts.emf</artifactId>
+					<version>${lunifera.vaadin-mobile.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.mobile.vaadin</groupId>
+					<artifactId>org.lunifera.mobile.vaadin.ecview.model</artifactId>
+					<version>${lunifera.vaadin-mobile.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.mobile.vaadin</groupId>
+					<artifactId>org.lunifera.mobile.vaadin.ecview.presentation</artifactId>
+					<version>${lunifera.vaadin-mobile.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.mobile.vaadin</groupId>
+					<artifactId>org.lunifera.mobile.vaadin.touchkit.osgi</artifactId>
+					<version>${lunifera.vaadin-mobile.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.mobile.vaadin</groupId>
+					<artifactId>org.lunifera.mobile.vaadin.widgetset</artifactId>
+					<version>${lunifera.vaadin-mobile.version}</version>
+				</dependency>
+
+
+				<!-- Metadata service -->
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.types.bundles</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.types.loader.api</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.types.loader.runtime</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.xbase.setups</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
+			<id>lunifera-runtime</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<dependencies>
+				<!-- Runtime web -->
+				<dependency>
+					<groupId>org.lunifera.runtime.web</groupId>
+					<artifactId>org.lunifera.runtime.web.ecview.services.vaadin</artifactId>
+					<version>${lunifera.runtimeweb.version}</version>
+				</dependency>
+
+
+				<!-- Metadata service -->
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.metadata.services</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder.participant.jvmtypes</groupId>
+					<artifactId>org.lunifera.xtext.builder.metadata.services</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.types.loader.runtime</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.participant.xbase</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.participant</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.participant.i18n</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
+			<id>lunifera-ide</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<dependencies>
+
+				<!-- DSL -->
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.common.xtext.ui</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.datatype.xtext.ui</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.dto.xtext.ui</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.entity.xtext.ui</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.dsl</groupId>
+					<artifactId>org.lunifera.dsl.eclipse.ui</artifactId>
+					<version>${lunifera.dsl.version}</version>
+				</dependency>
+
+				<!-- ECView addons bundles -->
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.dsl.ui</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<!-- ECView addons bundles -->
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.uisemantics.ui</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<!-- ECView addons bundles -->
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.vaadin.ide.preview</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+
+				<!-- Lunifera IDE -->
+				<dependency>
+					<groupId>org.lunifera.ide</groupId>
+					<artifactId>org.lunifera.ide.core</artifactId>
+					<version>${lunifera.ide.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ide</groupId>
+					<artifactId>org.lunifera.ide.core.api</artifactId>
+					<version>${lunifera.ide.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ide</groupId>
+					<artifactId>org.lunifera.ide.core.ui</artifactId>
+					<version>${lunifera.ide.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ide</groupId>
+					<artifactId>org.lunifera.ide.core.ui.shared</artifactId>
+					<version>${lunifera.ide.version}</version>
+				</dependency>
+
+				<!-- Metadata service -->
+				<dependency>
+					<groupId>org.lunifera.xtext.builder</groupId>
+					<artifactId>org.lunifera.xtext.builder.ui.access</artifactId>
+					<version>${lunifera.metadata-service.version}</version>
+				</dependency>
+			</dependencies>
 		</profile>
 	</profiles>
 
