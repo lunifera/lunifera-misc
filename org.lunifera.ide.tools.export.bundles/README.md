@@ -13,20 +13,14 @@ Profiles:
 - lunifera-ide for IDE bundles
 
 Call 
-```
-mvn clean verify -Plunifera-common -Dclassifier=sources
-```
+``` mvn clean verify -Plunifera-common -Dclassifier=sources ```
 to download all common source bundles
 
 Call
-``` 
-mvn clean verify -Plunifera-common
-```
+``` mvn clean verify -Plunifera-common ```
 to download all common jar files
 
 You also may combine profiles:
-```
-mvn clean verify -Plunifera-common, lunifera-runtime, lunifera-ide
-```
+``` mvn clean verify -Plunifera-common, lunifera-runtime, lunifera-ide ```
 to download bundles of different categories at once.
 
