@@ -6,14 +6,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<lunifera.dsl.version>0.7.5-SNAPSHOT</lunifera.dsl.version>
-		<lunifera.ecview.version>0.7.5-SNAPSHOT</lunifera.ecview.version>
-		<lunifera.ecview-addons.version>0.7.5-SNAPSHOT</lunifera.ecview-addons.version>
-		<lunifera.runtime.version>0.7.5-SNAPSHOT</lunifera.runtime.version>
-		<lunifera.runtimeweb.version>0.7.5-SNAPSHOT</lunifera.runtimeweb.version>
-		<lunifera.vaadin-mobile.version>0.7.5-SNAPSHOT</lunifera.vaadin-mobile.version>
+		<lunifera.dsl.version>0.8.1-SNAPSHOT</lunifera.dsl.version>
+		<lunifera.ecview.version>0.8.1-SNAPSHOT</lunifera.ecview.version>
+		<lunifera.ecview-addons.version>0.8.1-SNAPSHOT</lunifera.ecview-addons.version>
+		<lunifera.runtime.version>0.8.1-SNAPSHOT</lunifera.runtime.version>
+		<lunifera.runtimeweb.version>0.8.1-SNAPSHOT</lunifera.runtimeweb.version>
+		<lunifera.vaadin-mobile.version>0.8.1-SNAPSHOT</lunifera.vaadin-mobile.version>
 		<lunifera.ide.version>0.7.5-SNAPSHOT</lunifera.ide.version>
-		<lunifera.metadata-service.version>0.8.5-SNAPSHOT</lunifera.metadata-service.version>
+		<lunifera.metadata-service.version>0.8.7-SNAPSHOT</lunifera.metadata-service.version>
 	</properties>
 
 	<repositories>
@@ -345,6 +345,16 @@
 				<dependency>
 					<groupId>org.lunifera.ecview</groupId>
 					<artifactId>org.lunifera.ecview.xtext.builder.participant</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.vaadin.servlet.mobile</artifactId>
+					<version>${lunifera.ecview-addons.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>org.lunifera.ecview</groupId>
+					<artifactId>org.lunifera.ecview.jetty.manager</artifactId>
 					<version>${lunifera.ecview-addons.version}</version>
 				</dependency>
 
